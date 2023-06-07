@@ -13,7 +13,7 @@ target_link_libraries(wsclient ${OPENSSL_LIBRARIES})
 
 
 #Boost
-find_package(Boost REQUIRED)
+find_package(Boost REQUIRED COMPONENTS system thread)
 include_directories(${Boost_INCLUDE_DIRS})
 target_link_libraries(wsclient ${Boost_LIBRARIES})
 
