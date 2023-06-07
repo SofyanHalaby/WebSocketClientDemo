@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.0)
 
+set (CMAKE_CXX_STANDARD 11)
+
 project(wsclient)
 add_executable(wsclient src/source.cpp src/websocketwrapper.cpp)
 include_directories(src)
